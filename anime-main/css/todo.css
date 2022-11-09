@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100%;
+  background-color: #36096d;
+  background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+}
+
+.warpper {
+  margin: 120px auto;
+  max-width: 400px;
+  background: white;
+  border-radius: 10px;
+  width: 100%;
+  padding: 25px;
+}
+.warpper header {
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.warpper .input__field {
+  justify-content: center;
+  display: flex;
+  height: 35px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.warpper .input__field input {
+  width: 90%;
+  border-radius: 3px;
+  padding: 0 15px;
+  border: none;
+  border: 2px solid black;
+}
+.warpper .input__field button {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  margin-left: 5px;
+  background: #ccc;
+  border: none;
+  color: black;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.2s linear;
+}
+.warpper .input__field button:hover {
+  background: #37d5d6;
+  color: white;
+}
+
+.warpper .todo__list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.todo__list li {
+  list-style: none;
+  position: relative;
+  background: #d8d8d8;
+  border-radius: 3px;
+  height: 35px;
+  margin: 10px 0px;
+  padding: 5px 20px;
+}
+
+.todo__list li input {
+  display: inline-block;
+  top: 50%;
+  transform: translatey(-50%);
+  position: absolute;
+  left: 13px;
+  height: 100%;
+  cursor: pointer;
+}
+.todo__list li i {
+  display: inline-block;
+  right: 0;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  margin-right: 10px;
+}
+.footer {
+  margin-top: 20px;
+  width: 100%;
+  /* justify-content: space-between; */
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.content p {
+  padding: 0 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content p.checked {
+  text-decoration: line-through;
+}
+.content i {
+  cursor: pointer;
+}
+.footer button {
+  font-size: 13px;
+  cursor: pointer;
+  padding: 10px 12px;
+  position: absolute;
+  right: 0;
+  background: #ccc;
+  border: none;
+  border-radius: 3px;
+  color: black;
+  transition: 0.2s linear;
+}
+
+.footer button:hover {
+  background: #37d5d6;
+  color: white;
+}
+.footer .pendingTasks {
+  display: block;
+  padding: 0 5px;
+}
+@media screen and (max-width: 767.98px) {
+  body {
+    padding: 0 5%;
+  }
+}
